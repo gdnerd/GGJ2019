@@ -5,16 +5,26 @@ public class TreadmillManager : MonoBehaviour {
     [SerializeField]
     private float givenTime = 10f;
     [SerializeField]
-    private float speed = 5f;
+    public float currentSpeed = 10f;
+    public readonly float targetSpeed = 10f;
     private float startTime;
     [SerializeField]
     private GameObject finalTreadmillPiecePrefab;
     [SerializeField]
     private List<GameObject> treadmillPiecePrefabs;
     private List<GameObject> treadmillPieces;
+
+    private static TreadmillManager instance;
+    public static TreadmillManager Instance {
+        get { return instance; }
+        set { instance = value; }
+    }
+
+
     Rigidbody rigidbody;
 
     private void Start() {
+        Instance = this;
         rigidbody = GetComponent<Rigidbody>();
         startTime = Time.time;
         treadmillPieces = new List<GameObject>();
@@ -30,6 +40,6 @@ public class TreadmillManager : MonoBehaviour {
             //SceneManager.LoadScene(2);
         }
 
-        rigidbody.MovePosition(transform.position + Vector3.back * speed * Time.deltaTime);
+        rigidbody.MovePosition(transform.position + Vector3.back * currentSpeed * Time.deltaTime);
     }
 }

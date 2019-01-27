@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ef1c2d925404deabe140df0b7d8928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  treadmill: {fileID: 1754286339}
 --- !u!54 &1406034510
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -367,3 +368,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1754286339 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114290822659903494, guid: dc118047265a5452b9c3e73d04f49cdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 153890033}
+  m_Script: {fileID: 11500000, guid: 3e354e1814541474a821582feb5aca0e, type: 3}

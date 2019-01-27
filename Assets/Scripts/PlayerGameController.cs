@@ -5,7 +5,11 @@ public class PlayerGameController : MonoBehaviour {
     RaycastHit hit;
 
     private void OnTriggerEnter(Collider other) {
-        SceneManager.LoadScene(2);
+        if (other.tag == "Blocker") {
+            TreadmillManager.Instance.currentSpeed = 0;
+        } else {
+            SceneManager.LoadScene(2);
+        }
     }
 
     private void Update() {
