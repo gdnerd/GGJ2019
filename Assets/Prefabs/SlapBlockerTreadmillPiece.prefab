@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24dbe78051ad94cd1a05e3bcbc6a57ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetGesture: KeyPress
+  targetGesture: Slap
 --- !u!212 &212061091908194228
 SpriteRenderer:
   m_ObjectHideFlags: 1

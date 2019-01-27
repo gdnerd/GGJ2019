@@ -10,14 +10,16 @@ public class PlayerGameController : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKey(KeyCode.P)) {
-            HandleGesture("KeyPress");
+            HandleGesture("Slap");
+        }else if (Input.GetKey(KeyCode.O)) {
+            HandleGesture("Talk");
         }
     }
 
     public void HandleGesture(string gesture) {
         Ray ray = new Ray(transform.position, Vector3.forward);
         if(Physics.Raycast(ray, out hit, 1f, LayerMask.GetMask("Blockers"), QueryTriggerInteraction.Collide)) {
-            hit.collider.transform.GetComponent<BasicBlocker>().HandleGesture("KeyPress");
+            hit.collider.transform.GetComponent<BasicBlocker>().HandleGesture(gesture);
         }
     }
 }
