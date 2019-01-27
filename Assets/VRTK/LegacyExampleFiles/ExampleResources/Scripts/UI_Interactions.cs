@@ -12,6 +12,7 @@
         public void Button_Red()
         {
             VRTK_Logger.Info("Red Button Clicked");
+            print("test");
         }
 
         public void Button_Pink()
