@@ -8,11 +8,12 @@ public class AnimationBlocker : BasicBlocker {
 
     private void Start() {
         animator = gameObject.GetComponent<Animator>();
-        collider = gameObject.GetComponent<Collider>();
+        this.collider = gameObject.GetComponent<Collider>();
     }
 
     public void DisableCollider() {
-        collider.enabled = false;
+        this.collider.enabled = false;
+        TreadmillManager.Instance.currentSpeed = TreadmillManager.Instance.targetSpeed;
     }
 
     public override void HandleCorrectGesture() {

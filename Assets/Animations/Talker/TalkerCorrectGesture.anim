@@ -48,6 +48,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 85f281af6b25b4862ad7bcc2f72dd700, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: c20ac1e8c8385414da4373d582d496de, type: 3}
     attribute: m_Sprite
     path: SlapperSprite
     classID: 212
@@ -75,6 +77,7 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 85f281af6b25b4862ad7bcc2f72dd700, type: 3}
+    - {fileID: 21300000, guid: c20ac1e8c8385414da4373d582d496de, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
