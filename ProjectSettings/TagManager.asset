@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Blocker
+  - poop
+  - Controller
   layers:
   - Default
   - TransparentFX
