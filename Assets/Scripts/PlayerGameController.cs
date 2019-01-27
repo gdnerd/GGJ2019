@@ -15,7 +15,7 @@ public class PlayerGameController : MonoBehaviour {
         if (other.tag == "Blocker") {
             TreadmillManager.Instance.currentSpeed = 0;
         } else if (other.tag == "Finish") {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("BathroomScene");
         }
     }
 
@@ -44,8 +44,8 @@ public class PlayerGameController : MonoBehaviour {
     }
 
     public void HandleGesture(string gesture) {
-        Ray ray = new Ray(transform.position, Vector3.forward);
-        if(Physics.Raycast(ray, out hit, 1f, LayerMask.GetMask("Blockers"), QueryTriggerInteraction.Collide)) {
+        Ray ray = new Ray(transform.position, Vector3.back);
+        if(Physics.Raycast(ray, out hit, 10f, LayerMask.GetMask("Blockers"), QueryTriggerInteraction.Collide)) {
             hit.collider.transform.GetComponent<BasicBlocker>().HandleGesture(gesture);
         }
     }
