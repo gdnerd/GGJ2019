@@ -31,6 +31,7 @@ public class PlayerGameController : MonoBehaviour {
         if (Input.GetKey(KeyCode.C) && TreadmillManager.Instance.currentSpeed > 0) {
             TreadmillManager.Instance.currentSpeed = 1;
             poopMeter -= fillSpeed * Time.deltaTime;
+            poopMeter = Mathf.Max(poopMeter, 0);
         } else {
             if (TreadmillManager.Instance.currentSpeed > 0) {
                 TreadmillManager.Instance.currentSpeed = TreadmillManager.Instance.targetSpeed;
