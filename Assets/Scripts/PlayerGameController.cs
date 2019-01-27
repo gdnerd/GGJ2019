@@ -3,6 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerGameController : MonoBehaviour {
     RaycastHit hit;
+    [SerializeField]
+    private float poopMeter = 0;
+    [SerializeField]
+    private float fillSpeed = 5;
+    [SerializeField]
+    private float poopThreshold = 5;
+
 
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Blocker") {
@@ -20,6 +27,19 @@ public class PlayerGameController : MonoBehaviour {
         }else if (Input.GetKey(KeyCode.L)) {
             HandleGesture("Pet");
         }
+
+        if (Input.GetKey(KeyCode.C) && TreadmillManager.Instance.currentSpeed > 0) {
+            TreadmillManager.Instance.currentSpeed = 1;
+            poopMeter -= fillSpeed * Time.deltaTime;
+        } else {
+            if (TreadmillManager.Instance.currentSpeed > 0) {
+                TreadmillManager.Instance.currentSpeed = TreadmillManager.Instance.targetSpeed;
+            }
+
+            poopMeter += fillSpeed * Time.deltaTime;
+        }
+
+        if (poopMeter >= poopThreshold) Debug.Log("I Crapped My Pants");
     }
 
     public void HandleGesture(string gesture) {
