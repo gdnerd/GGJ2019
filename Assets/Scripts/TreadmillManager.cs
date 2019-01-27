@@ -6,7 +6,7 @@ public class TreadmillManager : MonoBehaviour {
     private float givenTime = 10f;
     [SerializeField]
     public float currentSpeed = 10f;
-    public readonly float targetSpeed = 10f;
+    public float targetSpeed = 10f;
     private float startTime;
     [SerializeField]
     private List<GameObject> treadmillPiecePrefabs;
@@ -26,7 +26,11 @@ public class TreadmillManager : MonoBehaviour {
         startTime = Time.time;
         treadmillPieces = new List<GameObject>();
         for (int i = 0; i < 10; i++) {
-            treadmillPieces.Add(Instantiate(treadmillPiecePrefabs[Random.Range(0, treadmillPiecePrefabs.Count)], new Vector3(transform.position.x, 0, transform.position.z - 20 * (i + 2)), Quaternion.identity, this.transform));
+            if (i < 3) {
+                treadmillPieces.Add(Instantiate(treadmillPiecePrefabs[i], new Vector3(transform.position.x, 0, transform.position.z - 20 * (i + 2)), Quaternion.identity, this.transform));
+            } else {
+                treadmillPieces.Add(Instantiate(treadmillPiecePrefabs[Random.Range(0, treadmillPiecePrefabs.Count)], new Vector3(transform.position.x, 0, transform.position.z - 20 * (i + 2)), Quaternion.identity, this.transform));
+            }
         }
     }
 

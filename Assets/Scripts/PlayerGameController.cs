@@ -10,6 +10,8 @@ public class PlayerGameController : MonoBehaviour {
     [SerializeField]
     private float poopThreshold = 50;
     private Transform poopMask;
+    [SerializeField]
+    private ParticleSystem poopsplosion;
 
     private void Start() {
         poopMask = GameObject.Find("PoopMask").transform;
@@ -35,7 +37,6 @@ public class PlayerGameController : MonoBehaviour {
         if (Input.GetKey(KeyCode.C) && TreadmillManager.Instance.currentSpeed > 0) {
             TreadmillManager.Instance.currentSpeed = 1;
             poopMeter -= fillSpeed * Time.deltaTime;
-            poopMeter = Mathf.Max(poopMeter, 0);
         } else {
             if (TreadmillManager.Instance.currentSpeed > 0) {
                 TreadmillManager.Instance.currentSpeed = TreadmillManager.Instance.targetSpeed;
@@ -44,9 +45,17 @@ public class PlayerGameController : MonoBehaviour {
             poopMeter += fillSpeed * Time.deltaTime;
         }
 
-        poopMask.localScale = new Vector3(poopMask.localScale.x, (poopMeter / poopThreshold) * 15f, poopMask.localScale.z);
+        poopMeter = Mathf.Clamp(poopMeter, 0, poopThreshold);
 
-        if (poopMeter >= poopThreshold) Debug.Log("I Crapped My Pants");
+        if (poopMeter >= poopThreshold) {
+            poopMeter = 0;
+            fillSpeed = 0;
+            TreadmillManager.Instance.currentSpeed = 0;
+            TreadmillManager.Instance.targetSpeed = 0;
+            poopsplosion.Play();
+        }
+
+        poopMask.localScale = new Vector3(poopMask.localScale.x, (poopMeter / poopThreshold) * 15f, poopMask.localScale.z);
     }
 
     public void HandleGesture(string gesture) {
