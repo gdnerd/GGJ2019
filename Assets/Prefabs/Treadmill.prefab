@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4764376662287060}
   - component: {fileID: 114290822659903494}
+  - component: {fileID: 54123560197140522}
   m_Layer: 0
   m_Name: Treadmill
   m_TagString: Untagged
@@ -40,6 +41,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54123560197140522
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531682395772054}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 118
+  m_CollisionDetection: 0
 --- !u!114 &114290822659903494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,6 +67,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e354e1814541474a821582feb5aca0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  givenTime: 10
+  speed: 10
+  finalTreadmillPiecePrefab: {fileID: 1142236702095008, guid: 8cbfa46b52b3e43e9814b98056b87d75,
+    type: 2}
   treadmillPiecePrefabs:
+  - {fileID: 1256684611437468, guid: 8a08891edb9e74103960f511b41a46ee, type: 2}
+  - {fileID: 1256684611437468, guid: 90eabcf580c44417e8f7b9c506a0655f, type: 2}
   - {fileID: 1256684611437468, guid: e4262cd0ed46e48f786bde7a13e70c03, type: 2}
-  - {fileID: 1256684611437468, guid: 9b0bdf095557e4bda8d312055766e6ce, type: 2}
