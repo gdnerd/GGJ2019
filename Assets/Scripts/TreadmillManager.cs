@@ -20,7 +20,6 @@ public class TreadmillManager : MonoBehaviour {
         set { instance = value; }
     }
 
-
     Rigidbody rigidbody;
 
     private void Start() {
