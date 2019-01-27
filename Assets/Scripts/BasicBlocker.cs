@@ -4,16 +4,16 @@ public class BasicBlocker : MonoBehaviour, IBlockerLogicHandler {
     [SerializeField]
     private string targetGesture;
 
-    public void HandleGesture(string gesture) {
+    public virtual void HandleGesture(string gesture) {
         if (gesture == targetGesture) HandleCorrectGesture();
         else HandleIncorrectGesture();
     }
 
-    public void HandleCorrectGesture() {
+    public virtual void HandleCorrectGesture() {
         gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 
-    public void HandleIncorrectGesture() {
+    public virtual void HandleIncorrectGesture() {
 
     }
 }
