@@ -8,8 +8,12 @@ public class PlayerGameController : MonoBehaviour {
     [SerializeField]
     private float fillSpeed = 5;
     [SerializeField]
-    private float poopThreshold = 5;
+    private float poopThreshold = 50;
+    private Transform poopMask;
 
+    private void Start() {
+        poopMask = GameObject.Find("PoopMask").transform;
+    }
 
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Blocker") {
@@ -39,6 +43,8 @@ public class PlayerGameController : MonoBehaviour {
 
             poopMeter += fillSpeed * Time.deltaTime;
         }
+
+        poopMask.localScale = new Vector3(poopMask.localScale.x, (poopMeter / poopThreshold) * 15f, poopMask.localScale.z);
 
         if (poopMeter >= poopThreshold) Debug.Log("I Crapped My Pants");
     }
