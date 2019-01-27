@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: 4f9c476bfb1b0d547b2b0137a5158cf8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bath
+    100002: //RootNode
+    100004: bin
+    100006: bottle
+    100008: bottle1
+    100010: bottle2
+    100012: bowl
+    100014: cabinet_br
+    100016: cabinet_br1
+    100018: cabinet_grey
+    100020: cabinet_grey1
+    100022: carpet
+    100024: door
+    100026: door 1
+    100028: door_frame
+    100030: floor_base
+    100032: floor_lamp
+    100034: frames
+    100036: lid
+    100038: mirror
+    100040: Object029
+    100042: radiator
+    100044: shade
+    100046: shade_cover
+    100048: shower
+    100050: shower 1
+    100052: shower002
+    100054: shower004
+    100056: shower1
+    100058: shower2
+    100060: showerdoor
+    100062: showerdoor001
+    100064: showerdoor002
+    100066: sink
+    100068: soap
+    100070: toilet
+    100072: toilet_paper
+    100074: towel
+    100076: towel_rack
+    100078: wall_blue
+    100080: wall_br
+    100082: wall_cornerblue
+    100084: wall_cornerbr
+    100086: wall_cornerorange1
+    100088: wall_doorblue
+    100090: wall_doorbr
+    100092: wall_doororange
+    100094: wall_orange
+    100096: wall_window_orange
+    100098: wall_windowblue
+    100100: wall_windowbr
+    100102: washing_machine
+    100104: window
+    100106: shower1 1
+    100108: showerdoor1
+    100110: showerdoor2
+    100112: shower2 1
+    400000: bath
+    400002: //RootNode
+    400004: bin
+    400006: bottle
+    400008: bottle1
+    400010: bottle2
+    400012: bowl
+    400014: cabinet_br
+    400016: cabinet_br1
+    400018: cabinet_grey
+    400020: cabinet_grey1
+    400022: carpet
+    400024: door
+    400026: door 1
+    400028: door_frame
+    400030: floor_base
+    400032: floor_lamp
+    400034: frames
+    400036: lid
+    400038: mirror
+    400040: Object029
+    400042: radiator
+    400044: shade
+    400046: shade_cover
+    400048: shower
+    400050: shower 1
+    400052: shower002
+    400054: shower004
+    400056: shower1
+    400058: shower2
+    400060: showerdoor
+    400062: showerdoor001
+    400064: showerdoor002
+    400066: sink
+    400068: soap
+    400070: toilet
+    400072: toilet_paper
+    400074: towel
+    400076: towel_rack
+    400078: wall_blue
+    400080: wall_br
+    400082: wall_cornerblue
+    400084: wall_cornerbr
+    400086: wall_cornerorange1
+    400088: wall_doorblue
+    400090: wall_doorbr
+    400092: wall_doororange
+    400094: wall_orange
+    400096: wall_window_orange
+    400098: wall_windowblue
+    400100: wall_windowbr
+    400102: washing_machine
+    400104: window
+    400106: shower1 1
+    400108: showerdoor1
+    400110: showerdoor2
+    400112: shower2 1
+    2100000: 'Material #31'
+    2100002: 'Material #30'
+    2100004: shower_glass
+    2100006: shower
+    2300000: bath
+    2300002: bin
+    2300004: bottle
+    2300006: bottle1
+    2300008: bottle2
+    2300010: bowl
+    2300012: cabinet_br
+    2300014: cabinet_br1
+    2300016: cabinet_grey
+    2300018: cabinet_grey1
+    2300020: carpet
+    2300022: door 1
+    2300024: door_frame
+    2300026: floor_base
+    2300028: floor_lamp
+    2300030: frames
+    2300032: lid
+    2300034: mirror
+    2300036: Object029
+    2300038: radiator
+    2300040: shade
+    2300042: shade_cover
+    2300044: shower 1
+    2300046: shower002
+    2300048: shower004
+    2300050: showerdoor
+    2300052: showerdoor001
+    2300054: showerdoor002
+    2300056: sink
+    2300058: soap
+    2300060: toilet_paper
+    2300062: towel
+    2300064: towel_rack
+    2300066: wall_blue
+    2300068: wall_br
+    2300070: wall_cornerblue
+    2300072: wall_cornerbr
+    2300074: wall_cornerorange1
+    2300076: wall_doorblue
+    2300078: wall_doorbr
+    2300080: wall_doororange
+    2300082: wall_orange
+    2300084: wall_window_orange
+    2300086: wall_windowblue
+    2300088: wall_windowbr
+    2300090: washing_machine
+    2300092: window
+    2300094: shower1 1
+    2300096: shower2
+    2300098: showerdoor1
+    2300100: showerdoor2
+    2300102: shower2 1
+    3300000: bath
+    3300002: bin
+    3300004: bottle
+    3300006: bottle1
+    3300008: bottle2
+    3300010: bowl
+    3300012: cabinet_br
+    3300014: cabinet_br1
+    3300016: cabinet_grey
+    3300018: cabinet_grey1
+    3300020: carpet
+    3300022: door 1
+    3300024: door_frame
+    3300026: floor_base
+    3300028: floor_lamp
+    3300030: frames
+    3300032: lid
+    3300034: mirror
+    3300036: Object029
+    3300038: radiator
+    3300040: shade
+    3300042: shade_cover
+    3300044: shower 1
+    3300046: shower002
+    3300048: shower004
+    3300050: showerdoor
+    3300052: showerdoor001
+    3300054: showerdoor002
+    3300056: sink
+    3300058: soap
+    3300060: toilet_paper
+    3300062: towel
+    3300064: towel_rack
+    3300066: wall_blue
+    3300068: wall_br
+    3300070: wall_cornerblue
+    3300072: wall_cornerbr
+    3300074: wall_cornerorange1
+    3300076: wall_doorblue
+    3300078: wall_doorbr
+    3300080: wall_doororange
+    3300082: wall_orange
+    3300084: wall_window_orange
+    3300086: wall_windowblue
+    3300088: wall_windowbr
+    3300090: washing_machine
+    3300092: window
+    3300094: shower1 1
+    3300096: shower2
+    3300098: showerdoor1
+    3300100: showerdoor2
+    3300102: shower2 1
+    4300000: radiator
+    4300002: window
+    4300004: floor_base
+    4300006: wall_orange
+    4300008: wall_doororange
+    4300010: wall_window_orange
+    4300012: wall_cornerorange1
+    4300014: door_frame
+    4300016: door
+    4300018: floor_lamp
+    4300020: shade_cover
+    4300022: shade
+    4300024: frames
+    4300026: bath
+    4300028: cabinet_br1
+    4300030: sink
+    4300032: mirror
+    4300034: Object029
+    4300036: towel_rack
+    4300038: toilet_paper
+    4300040: soap
+    4300042: carpet
+    4300044: towel
+    4300046: bottle
+    4300048: cabinet_br
+    4300050: bin
+    4300052: lid
+    4300054: bowl
+    4300056: washing_machine
+    4300058: showerdoor
+    4300060: shower
+    4300062: cabinet_grey1
+    4300064: cabinet_grey
+    4300066: wall_cornerbr
+    4300068: wall_doorbr
+    4300070: wall_br
+    4300072: wall_windowbr
+    4300074: bottle1
+    4300076: bottle2
+    4300078: wall_blue
+    4300080: wall_cornerblue
+    4300082: wall_doorblue
+    4300084: wall_windowblue
+    4300086: shower002
+    4300088: showerdoor001
+    4300090: shower004
+    4300092: showerdoor002
+    4300094: shower1
+    4300096: showerdoor1
+    4300098: shower2
+    4300100: showerdoor2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
