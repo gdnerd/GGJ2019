@@ -68,10 +68,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   givenTime: 10
-  speed: 10
+  currentSpeed: 10
   finalTreadmillPiecePrefab: {fileID: 1142236702095008, guid: 8cbfa46b52b3e43e9814b98056b87d75,
     type: 2}
   treadmillPiecePrefabs:
   - {fileID: 1256684611437468, guid: 8a08891edb9e74103960f511b41a46ee, type: 2}
   - {fileID: 1256684611437468, guid: 90eabcf580c44417e8f7b9c506a0655f, type: 2}
-  - {fileID: 1256684611437468, guid: e4262cd0ed46e48f786bde7a13e70c03, type: 2}
+  - {fileID: 1256684611437468, guid: 24233d049ccde4f1b9d7a473193df4b9, type: 2}

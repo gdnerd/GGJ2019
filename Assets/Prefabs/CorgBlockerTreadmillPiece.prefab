@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23331889360009410}
   - component: {fileID: 114210359013043208}
   m_Layer: 0
-  m_Name: SlapBlockerTreadmillPiece
+  m_Name: CorgBlockerTreadmillPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4195326902015470}
   - component: {fileID: 212061091908194228}
   m_Layer: 9
-  m_Name: SlapperSprite
+  m_Name: CorgSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710336921626078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.15, z: 1}
   m_LocalScale: {x: 0.020000001, y: 0.06666667, z: 0.25}
   m_Children: []
   m_Father: {fileID: 4350279043197486}
@@ -120,7 +120,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 33af27359b49eda48829e2c0bf1e12b8, type: 2}
+  - {fileID: 2100000, guid: 2be9fb9bcea91e7419d90800fabf8e0d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -175,7 +175,7 @@ Animator:
   m_GameObject: {fileID: 1839175912435072}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aaffb593990584fedbe2d0b2303879a1, type: 2}
+  m_Controller: {fileID: 9100000, guid: d3740da65970c4f4bae8b27a00562001, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24dbe78051ad94cd1a05e3bcbc6a57ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetGesture: Slap
+  targetGesture: Pet
 --- !u!212 &212061091908194228
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -242,7 +242,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b8c2dbc93d61c4a75bfa5a0c64f225c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f269ccec2271499387f418fc293d10b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

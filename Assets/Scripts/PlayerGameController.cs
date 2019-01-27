@@ -17,6 +17,8 @@ public class PlayerGameController : MonoBehaviour {
             HandleGesture("Slap");
         }else if (Input.GetKey(KeyCode.O)) {
             HandleGesture("Talk");
+        }else if (Input.GetKey(KeyCode.L)) {
+            HandleGesture("Pet");
         }
     }
 
