@@ -11,6 +11,9 @@
 [Ll]ogs/
 [Aa]ssets/AssetStoreTools*
 
+Temp/UnityLockFile
+Assets/Oculus/
+
 # Visual Studio cache directory
 .vs/
 
