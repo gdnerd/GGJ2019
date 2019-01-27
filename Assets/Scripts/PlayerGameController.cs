@@ -7,7 +7,7 @@ public class PlayerGameController : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Blocker") {
             TreadmillManager.Instance.currentSpeed = 0;
-        } else {
+        } else if (other.tag == "Finish") {
             SceneManager.LoadScene(2);
         }
     }
